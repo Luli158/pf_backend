@@ -1,9 +1,19 @@
-const express = require("express"); 
+import express from "express"; 
+import ProductManager from "./managers/product-manager.js";
+import productsRouter from "./routes/products.router.js";
+import cartsRouter from "./routes/carts.router.js";
 const app = express(); 
 const PUERTO = 8080; 
 
-const ProductManager = require("./managers/product-manager.js");
-const manager = new ProductManager("./src/data/productos.json"); 
+
+const manager = new ProductManager(); 
+app.use(express.json());  
+app.use(express.urlencoded({extended: true})); 
+
+//Rutas
+app.use("/api/products", productsRouter); 
+app.use("/api/carts", cartsRouter); 
+
 
 app.get("/", (req, res) => {
     res.send("Hola mundo!"); 

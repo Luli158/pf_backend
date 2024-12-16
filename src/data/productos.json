@@ -1,0 +1,198 @@
+[
+    {
+      "title": "Filtro de aceite",
+      "description": "Filtro para el sistema de lubricación de motores a combustión.",
+      "code": "FLT001",
+      "price": 1500,
+      "status": true,
+      "stock": 30,
+      "category": "Motor",
+      "thumbnails": [
+        "https://example.com/images/filtro_aceite1.jpg",
+        "https://example.com/images/filtro_aceite2.jpg"
+      ]
+    },
+    {
+      "title": "Pastillas de freno",
+      "description": "Juego de pastillas para frenos delanteros.",
+      "code": "PST002",
+      "price": 3500,
+      "status": true,
+      "stock": 50,
+      "category": "Frenos",
+      "thumbnails": [
+        "https://example.com/images/pastillas_freno1.jpg",
+        "https://example.com/images/pastillas_freno2.jpg"
+      ]
+    },
+    {
+      "title": "Bujía de encendido",
+      "description": "Bujía para motores de gasolina, compatible con varios modelos.",
+      "code": "BGN003",
+      "price": 800,
+      "status": true,
+      "stock": 100,
+      "category": "Encendido",
+      "thumbnails": [
+        "https://example.com/images/bujia1.jpg",
+        "https://example.com/images/bujia2.jpg"
+      ]
+    },
+    {
+      "title": "Correa de distribución",
+      "description": "Correa dentada para sincronizar el motor.",
+      "code": "CRD004",
+      "price": 4200,
+      "status": true,
+      "stock": 20,
+      "category": "Motor",
+      "thumbnails": [
+        "https://example.com/images/correa1.jpg",
+        "https://example.com/images/correa2.jpg"
+      ]
+    },
+    {
+      "title": "Filtro de aire",
+      "description": "Filtro para el sistema de admisión de aire del motor.",
+      "code": "FTA005",
+      "price": 1800,
+      "status": true,
+      "stock": 40,
+      "category": "Motor",
+      "thumbnails": [
+        "https://example.com/images/filtro_aire1.jpg",
+        "https://example.com/images/filtro_aire2.jpg"
+      ]
+    },
+    {
+      "title": "Amortiguador delantero",
+      "description": "Amortiguador compatible con vehículos compactos.",
+      "code": "AMT006",
+      "price": 7500,
+      "status": true,
+      "stock": 15,
+      "category": "Suspensión",
+      "thumbnails": [
+        "https://example.com/images/amortiguador1.jpg",
+        "https://example.com/images/amortiguador2.jpg"
+      ]
+    },
+    {
+      "title": "Radiador de motor",
+      "description": "Radiador de aluminio para sistemas de refrigeración.",
+      "code": "RDM007",
+      "price": 12500,
+      "status": true,
+      "stock": 10,
+      "category": "Refrigeración",
+      "thumbnails": [
+        "https://example.com/images/radiador1.jpg",
+        "https://example.com/images/radiador2.jpg"
+      ]
+    },
+    {
+      "title": "Filtro de combustible",
+      "description": "Filtro para eliminar impurezas del combustible.",
+      "code": "FTC008",
+      "price": 2000,
+      "status": true,
+      "stock": 25,
+      "category": "Motor",
+      "thumbnails": [
+        "https://example.com/images/filtro_combustible1.jpg",
+        "https://example.com/images/filtro_combustible2.jpg"
+      ]
+    },
+    {
+      "title": "Kit de embrague",
+      "description": "Kit completo para sistemas de embrague.",
+      "code": "EMB009",
+      "price": 13500,
+      "status": true,
+      "stock": 8,
+      "category": "Transmisión",
+      "thumbnails": [
+        "https://example.com/images/embrague1.jpg",
+        "https://example.com/images/embrague2.jpg"
+      ]
+    },
+    {
+      "title": "Espejo retrovisor",
+      "description": "Espejo retrovisor lateral, ajustable y resistente.",
+      "code": "ESP010",
+      "price": 2500,
+      "status": true,
+      "stock": 30,
+      "category": "Exterior",
+      "thumbnails": [
+        "https://example.com/images/espejo1.jpg",
+        "https://example.com/images/espejo2.jpg"
+      ]
+    },
+    {
+      "title": "Sensor de oxígeno",
+      "description": "Sensor para monitorear los gases de escape del motor.",
+      "code": "SNS011",
+      "price": 9500,
+      "status": true,
+      "stock": 12,
+      "category": "Motor",
+      "thumbnails": [
+        "https://example.com/images/sensor1.jpg",
+        "https://example.com/images/sensor2.jpg"
+      ]
+    },
+    {
+      "title": "Bateria de auto",
+      "description": "Batería de 12V, ideal para vehículos compactos y medianos.",
+      "code": "BAT012",
+      "price": 14500,
+      "status": true,
+      "stock": 18,
+      "category": "Eléctrico",
+      "thumbnails": [
+        "https://example.com/images/bateria1.jpg",
+        "https://example.com/images/bateria2.jpg"
+      ]
+    },
+    {
+      "title": "Llanta de repuesto",
+      "description": "Llanta de acero, medida 15 pulgadas.",
+      "code": "LLT013",
+      "price": 9000,
+      "status": true,
+      "stock": 10,
+      "category": "Ruedas",
+      "thumbnails": [
+        "https://example.com/images/llanta1.jpg",
+        "https://example.com/images/llanta2.jpg"
+      ]
+    },
+    {
+      "title": "Juego de cables de bujías",
+      "description": "Cables de alta resistencia para bujías de encendido.",
+      "code": "CAB014",
+      "price": 3200,
+      "status": true,
+      "stock": 25,
+      "category": "Encendido",
+      "thumbnails": [
+        "https://example.com/images/cables1.jpg",
+        "https://example.com/images/cables2.jpg"
+      ]
+    },
+    {
+      "title": "Paragolpes delantero",
+      "description": "Paragolpes de plástico reforzado, color negro mate.",
+      "code": "PGD015",
+      "price": 12500,
+      "status": true,
+      "stock": 5,
+      "category": "Exterior",
+      "thumbnails": [
+        "https://example.com/images/paragolpes1.jpg",
+        "https://example.com/images/paragolpes2.jpg"
+      ]
+    }
+  ]
+  
