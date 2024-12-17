@@ -68,7 +68,13 @@ class ProductManager {
             const arrayProductos = JSON.parse(respuesta); 
             return arrayProductos; 
         } catch (error) {
-            console.log("Error al leer el archivo"); 
+            if (error.code === "ENOENT") {
+                console.error("Archivo no encontrado, creando uno nuevo...");
+                await this.guardarArchivo([]); // Crea el archivo si no existe
+                return [];
+            }
+
+            //console.log("Error al leer el archivo"); 
         }
     }
 }
