@@ -1,12 +1,9 @@
 import express from "express"; 
-import ProductManager from "./managers/product-manager.js";
 import productsRouter from "./routes/products.router.js";
 import cartsRouter from "./routes/carts.router.js";
 const app = express(); 
 const PUERTO = 3000; 
 
-
-const manager = new ProductManager("./src/data/productos.json"); 
 app.use(express.json());  
 app.use(express.urlencoded({extended: true})); 
 
