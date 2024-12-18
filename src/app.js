@@ -19,56 +19,50 @@ app.get("/", (req, res) => {
     res.send("Hola mundo!"); 
 })
 
-app.get("/:pid",  async (req, res) => {
-    let id = req.params.pid; 
-    const productoBuscado = await manager.getProductById(parseInt(id)); 
-})
-
-
 app.listen(PUERTO, () => {
     console.log(`Escuchando en el puerto: ${PUERTO}`); 
 })
 
-app.put("/products/:id", (req, res) => {
-    let id = req.params.id; 
-    const { title, description, code, price, status, stock, category, thumbnails } = req.body; 
+// app.put("/products/:id", (req, res) => {
+//     let id = req.params.id; 
+//     const { title, description, code, price, status, stock, category, thumbnails } = req.body; 
 
-    const productIndex = products.findIndex(products => products.id === id);
-    //Si lo encuentra me retorna el numero del indice del cliente buscado.
-    //Y si no lo encuentra? Me retorna un indice que no es posible: -1
+//     const productIndex = products.findIndex(products => products.id === id);
+//     //Si lo encuentra me retorna el numero del indice del cliente buscado.
+//     //Y si no lo encuentra? Me retorna un indice que no es posible: -1
 
-    if(productIndex !== -1) {
-        products[productIndex].title = title;
-        products[productIndex].description = description; 
-        products[productIndex].code = code; 
-        products[productIndex].price = price; 
-        products[productIndex].status = status; 
-        products[productIndex].stock = stock; 
-        products[productIndex].category = category; 
-        products[productIndex].thumbnails = thumbnails; 
+//     if(productIndex !== -1) {
+//         products[productIndex].title = title;
+//         products[productIndex].description = description; 
+//         products[productIndex].code = code; 
+//         products[productIndex].price = price; 
+//         products[productIndex].status = status; 
+//         products[productIndex].stock = stock; 
+//         products[productIndex].category = category; 
+//         products[productIndex].thumbnails = thumbnails; 
 
 
-        //Verificamos por consola que todo se actualizo. 
-        console.log(products); 
-        res.send({status: "success", mensaje: "Producto actualizado"}); 
-    } else {
-        res.status(404).send({status: "error", mensaje: "Producto no encontrado"}); 
-    }
-})
+//         //Verificamos por consola que todo se actualizo. 
+//         console.log(products); 
+//         res.send({status: "success", mensaje: "Producto actualizado"}); 
+//     } else {
+//         res.status(404).send({status: "error", mensaje: "Producto no encontrado"}); 
+//     }
+// })
 
-//5) DELETE: 
+// //5) DELETE: 
 
-app.delete("/products/:id", (req, res) => {
-    let id = req.params.id; 
+// app.delete("/products/:id", (req, res) => {
+//     let id = req.params.id; 
 
-    const productIndex = products.findIndex(product => product.id === id); 
+//     const productIndex = products.findIndex(product => product.id === id); 
 
-    if(productIndex !== -1) {
-        product.splice(productIndex, 1); 
-        console.log(products);
+//     if(productIndex !== -1) {
+//         product.splice(productIndex, 1); 
+//         console.log(products);
 
-        res.send({status: "success", mensaje: "Producto eliminado"});
-    } else {
-        res.status(404).send({status: "error", mensaje: "El producto no existe"}); 
-    }
-})
+//         res.send({status: "success", mensaje: "Producto eliminado"});
+//     } else {
+//         res.status(404).send({status: "error", mensaje: "El producto no existe"}); 
+//     }
+// })

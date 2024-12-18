@@ -32,5 +32,39 @@ router.post("/", async (req, res) => {
     }
 });
 
+router.put("/:pid", async (req, res) => {
+    const { pid } = req.params; 
+    const updatedFields = req.body; 
+
+    if (Object.keys(updatedFields).length === 0) {
+        return res.status(400).send({ status: "error", message: "No se enviaron campos para actualizar" });
+    }
+
+    try {
+        const updatedProduct = await manager.updateProduct(parseInt(pid), updatedFields);
+
+        if (updatedProduct.error) {
+            return res.status(404).send({ status: "error", message: updatedProduct.error });
+        }
+
+        res.send({ status: "success", message: "Producto actualizado correctamente", product: updatedProduct });
+    } catch (error) {
+        res.status(500).send({ status: "error", message: "Error al actualizar el producto" });
+    }
+});
+
+router.delete("/:pid", async(req, res) => {
+    const pid = parseInt(req.params.pid);
+    try {
+        const deletedProduct = await manager.deleteProduct(parseInt(pid));
+        res.send({ status: "success", message: deletedProduct });
+    } catch (error){
+        if (error.message === "Producto no encontrado") {
+            res.status(404).send({ status: "error", message: error.message });
+        } else {
+            res.status(500).send({ status: "error", message: "Error al eliminar el producto" });
+        }
+    }
+});
 
 export default router;

@@ -16,11 +16,6 @@ class ProductManager {
             return; 
         }
 
-        if(arrayProductos.some(item => item.code === code)) {
-            console.log(`El código "${code}" ya está en uso. Debe ser único.`); 
-            return; 
-        }
-
         const nuevoProducto = {
             id: ++ProductManager.ultId,
             title, 
@@ -37,6 +32,20 @@ class ProductManager {
         await this.guardarArchivo(arrayProductos); 
     }
 
+    async deleteProduct(id) {
+
+        const arrayProductos = await this.leerArchivo(); 
+        const index = arrayProductos.findIndex(product => product.id === id);
+    
+        if (index === -1) {
+            return("Producto no encontrado"); 
+        }
+    
+        arrayProductos.splice(index, 1);
+        await this.guardarArchivo(arrayProductos);
+        return "Producto eliminado correctamente";
+    }
+
     async getProducts() {
         const arrayProductos = await this.leerArchivo(); 
         return arrayProductos;
@@ -51,6 +60,20 @@ class ProductManager {
         } else {
             return producto; 
         }
+    }
+
+    async updateProduct(id, updatedFields) {
+        const arrayProductos = await this.leerArchivo(); 
+        const index = arrayProductos.findIndex(item => item.id === id);
+    
+        if (index === -1) {
+            return { error: "Producto no encontrado" };
+        }
+
+        delete updatedFields.id;  // no modifica el id
+        arrayProductos[index] = { ...arrayProductos[index], ...updatedFields };
+        await this.guardarArchivo(arrayProductos);
+        return arrayProductos[index];
     }
 
 
