@@ -96,8 +96,6 @@ class ProductManager {
                 await this.guardarArchivo([]); // Crea el archivo si no existe
                 return [];
             }
-
-            //console.log("Error al leer el archivo"); 
         }
     }
 }
