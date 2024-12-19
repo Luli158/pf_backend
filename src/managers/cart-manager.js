@@ -1,10 +1,11 @@
 import { promises as fs } from "fs";
 
 class CartManager {
-    static ultId = 0; 
+      
     constructor(path) {
         this.products = []; 
         this.path = path; 
+        this.ultId = 0;
 }
 
 
@@ -17,7 +18,7 @@ class CartManager {
         const carts = await this.leerArchivo();
 
         const newCart = {
-            id: ++CartManager.ultId,
+            id: ++this.ultId,
             products: []
         };
 
@@ -32,7 +33,7 @@ class CartManager {
         const cart = carts.find(cart => cart.id === cid);
 
         if (!cart) {
-            return("Carrito no encontrado");
+            throw new Error("Carrito no encontrado");
         }
 
         return cart;
@@ -43,7 +44,7 @@ class CartManager {
 
         const cartIndex = carts.findIndex(cart => cart.id === cid);
         if (cartIndex === -1){
-            return ("Carrito no encontrado")
+            throw new Error ("Carrito no encontrado")
         }
 
         const productIndex = carts[cartIndex].products.findIndex(prod => prod.product === pid);
