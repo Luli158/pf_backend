@@ -180,5 +180,16 @@
       "https://example.com/images/paragolpes1.jpg",
       "https://example.com/images/paragolpes2.jpg"
     ]
+  },
+  {
+    "id": 2,
+    "title": "Bateria Moura",
+    "description": "12x65",
+    "code": "12345",
+    "price": "90000",
+    "status": true,
+    "stock": "10",
+    "category": "baterias",
+    "thumbnails": "sin imagen"
   }
 ]
