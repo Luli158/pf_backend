@@ -3,6 +3,19 @@ h1 {
     text-align: center;
 }
 
+.product-card {
+    margin-bottom: 20px;
+}
+
+.card{
+    background-color: rgb(189, 210, 211);
+}
+
+.boton {
+    background-color: rgb(143, 195, 197);
+    margin: 5px;
+}
+
 footer {
     background-color: bisque;
 }

@@ -1,5 +1,6 @@
 [
   {
+    "id": 12344,
     "title": "Pastillas de freno",
     "description": "Juego de pastillas para frenos delanteros.",
     "code": "PST002",
@@ -13,6 +14,7 @@
     ]
   },
   {
+    "id": 32332,
     "title": "Bujía de encendido",
     "description": "Bujía para motores de gasolina, compatible con varios modelos.",
     "code": "BGN003",
@@ -26,6 +28,7 @@
     ]
   },
   {
+    "id": 1233,
     "title": "Correa de distribución",
     "description": "Correa dentada para sincronizar el motor.",
     "code": "CRD004",
@@ -39,6 +42,7 @@
     ]
   },
   {
+    "id": 343244,
     "title": "Filtro de aire",
     "description": "Filtro para el sistema de admisión de aire del motor.",
     "code": "FTA005",
@@ -52,6 +56,7 @@
     ]
   },
   {
+    "id": 454355,
     "title": "Amortiguador delantero",
     "description": "Amortiguador compatible con vehículos compactos.",
     "code": "AMT006",
@@ -65,6 +70,7 @@
     ]
   },
   {
+    "id": 75676,
     "title": "Radiador de motor",
     "description": "Radiador de aluminio para sistemas de refrigeración.",
     "code": "RDM007",
@@ -78,6 +84,7 @@
     ]
   },
   {
+    "id": 545557,
     "title": "Filtro de combustible",
     "description": "Filtro para eliminar impurezas del combustible.",
     "code": "FTC008",
@@ -91,6 +98,7 @@
     ]
   },
   {
+    "id": 78758,
     "title": "Kit de embrague",
     "description": "Kit completo para sistemas de embrague.",
     "code": "EMB009",
@@ -104,6 +112,7 @@
     ]
   },
   {
+    "id": 96578,
     "title": "Espejo retrovisor",
     "description": "Espejo retrovisor lateral, ajustable y resistente.",
     "code": "ESP010",
@@ -117,6 +126,7 @@
     ]
   },
   {
+    "id": 103453,
     "title": "Sensor de oxígeno",
     "description": "Sensor para monitorear los gases de escape del motor.",
     "code": "SNS011",
@@ -130,6 +140,7 @@
     ]
   },
   {
+    "id": 115747,
     "title": "Bateria de auto",
     "description": "Batería de 12V, ideal para vehículos compactos y medianos.",
     "code": "BAT012",
@@ -143,6 +154,7 @@
     ]
   },
   {
+    "id": 12457457,
     "title": "Llanta de repuesto",
     "description": "Llanta de acero, medida 15 pulgadas.",
     "code": "LLT013",
@@ -156,6 +168,7 @@
     ]
   },
   {
+    "id": 1347347,
     "title": "Juego de cables de bujías",
     "description": "Cables de alta resistencia para bujías de encendido.",
     "code": "CAB014",
@@ -169,6 +182,7 @@
     ]
   },
   {
+    "id": 1434734,
     "title": "Paragolpes delantero",
     "description": "Paragolpes de plástico reforzado, color negro mate.",
     "code": "PGD015",
@@ -180,16 +194,5 @@
       "https://example.com/images/paragolpes1.jpg",
       "https://example.com/images/paragolpes2.jpg"
     ]
-  },
-  {
-    "id": 2,
-    "title": "Bateria Moura",
-    "description": "12x65",
-    "code": "12345",
-    "price": "90000",
-    "status": true,
-    "stock": "10",
-    "category": "baterias",
-    "thumbnails": "sin imagen"
   }
 ]

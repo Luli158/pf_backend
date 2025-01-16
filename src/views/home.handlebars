@@ -1,8 +1,22 @@
-<div>
-    {{#each products}}
-        <p> {{this.title}} </p>
-        <p> {{this.description}} </p>
-        <p> {{this.code}} </p>
-        <p> {{this.price}} </p>
-    {{/each}}
-</div>
+    <div class="container mt-4">
+        <div class="row" id="product-container">
+            {{#each products}}
+            <div class="col-md-4 product-card">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Product Title</h5>
+                        <p class="card-text">Product Description</p>
+                        <ul class="list-unstyled">
+                            <li><strong>Code:</strong> 12345</li>
+                            <li><strong>Price:</strong> $100</li>
+                            <li><strong>Status:</strong> Available</li>
+                            <li><strong>Stock:</strong> 10</li>
+                            <li><strong>Category:</strong> Example</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+ 

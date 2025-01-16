@@ -6,17 +6,30 @@ socket.on("productos", (data) => {
 
 const renderProducts = (productos) => {
     const contenedorProducts = document.getElementById("contenedorProducts")
-    contenedorProductos.innerHTML = "";
+    contenedorProducts.innerHTML = "";
     productos.forEach(item => {
         const card = document.createElement("div");
 
         card.innerHTML = `
-                                <p> ${item.title} <p>
-                                <p> ${item.price} <p>
-                                <p> ${item.description} <p>
-                                <button> Eliminar </button>
+                    <div class="col-md-4 product-card">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">${item.title}</h5>
+                                <p class="card-text">${item.description}</p>
+                                <ul class="list-unstyled">
+                                <li><strong>id:</strong> ${item.id}</li>
+                                    <li><strong>Code:</strong> ${item.code}</li>
+                                    <li><strong>Price:</strong> ${item.price}</li>
+                                    <li><strong>Status:</strong> ${item.status}</li>
+                                    <li><strong>Stock:</strong> ${item.stock}</li>
+                                    <li><strong>Category:</strong> ${item.category}</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="boton"> Eliminar </button>
                         `
-        contenedorProductos.appendChild(card);
+        contenedorProducts.appendChild(card);
          
         card.querySelector("button").addEventListener("click", () => {
             eliminarProducto(item.id); 

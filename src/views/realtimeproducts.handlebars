@@ -1,24 +1,43 @@
 <h2>REAL TIME PRODUCTS</h2>
 <h3>Productos actualizados en tiempo real</h3>
 
-<div id="contenedorProductos"></div>
+<div id="contenedorProducts"></div>
 
 <h3>Productos</h3>
-<form>
-    <input type="text" id="title" placeholder="Titulos">
-    <input type="text" id="description" placeholder="Descripcion">
-    <input type="number" id="price" placeholder="Precio">
-    <input type="text" id="thumbnails" value="sin imagen">
-    <input type="text" id="code" placeholder="Código">
-    <input type="number" id="stock" placeholder="Stock" >
-    <input type="text" id="category" placeholder="Categoria">
-    <select id="status">
-        <option value="true"> Activo </option>
-        <option value="false"> Inactivo </option>
-    </select>
-    <button type="button" id="btnEnviar"> Enviar </button>
+<form class="container">
+    <div class="row g-3">
+        <div class="col-md-6">
+            <input type="text" id="title" class="form-control" placeholder="Título">
+        </div>
+        <div class="col-md-6">
+            <input type="text" id="description" class="form-control" placeholder="Descripción">
+        </div>
+        <div class="col-md-6">
+            <input type="number" id="price" class="form-control" placeholder="Precio">
+        </div>
+        <div class="col-md-6">
+            <input type="text" id="thumbnails" class="form-control" value="sin imagen" placeholder="Miniatura">
+        </div>
+        <div class="col-md-6">
+            <input type="text" id="code" class="form-control" placeholder="Código">
+        </div>
+        <div class="col-md-6">
+            <input type="number" id="stock" class="form-control" placeholder="Stock">
+        </div>
+        <div class="col-md-6">
+            <input type="text" id="category" class="form-control" placeholder="Categoría">
+        </div>
+        <div class="col-md-6">
+            <select id="status" class="form-select">
+                <option value="true">Activo</option>
+                <option value="false">Inactivo</option>
+            </select>
+        </div>
+        <div class="col-12">
+            <button type="button" id="btnEnviar" class="btn boton">Enviar</button>
+        </div>
+    </div>
 </form>
-
 
 <script src="https://cdn.socket.io/4.7.4/socket.io.min.js"></script>
 <script src="js/index.js"></script>
